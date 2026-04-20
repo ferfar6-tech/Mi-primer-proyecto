@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contador web</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="container">
+      <h1>Contador web</h1>
+      <p id="counter" class="counter">0</p>
+
+      <div class="buttons">
+        <button id="decrement-btn" type="button">Restar -1</button>
+        <button id="increment-btn" type="button">Aumentar +1</button>
+        <button id="reset-btn" type="button" class="secondary">Reiniciar</button>
+      </div>
+
+      <section class="image-card" aria-live="polite">
+        <h2>Mundo y universo (sin repetir hasta reiniciar)</h2>
+        <img
+          id="random-image"
+          src="https://picsum.photos/seed/earth-night/640/360"
+          alt="Imagen aleatoria del mundo y el universo"
+        />
+      </section>
+
+      <section class="prompt-card" aria-live="polite">
+        <h2>Prompts de IA agregados por clic (+/-)</h2>
+        <textarea
+          id="prompt-log"
+          readonly
+          placeholder="Aquí aparecerán prompts de IA cada vez que presiones Aumentar o Restar..."
+        ></textarea>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
