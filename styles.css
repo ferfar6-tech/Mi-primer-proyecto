@@ -17,7 +17,7 @@ body {
 
 .container {
   text-align: center;
-  width: min(92vw, 720px);
+  width: min(94vw, 760px);
   padding: 2rem;
   background: rgba(15, 23, 42, 0.86);
   border: 1px solid rgba(148, 163, 184, 0.25);
@@ -69,11 +69,14 @@ button:active {
   background: linear-gradient(135deg, #4b5563, #374151);
 }
 
-.image-card {
+.image-card,
+.prompt-card {
   padding-top: 0.5rem;
+  margin-top: 0.75rem;
 }
 
-.image-card h2 {
+.image-card h2,
+.prompt-card h2 {
   font-size: 1.05rem;
   margin: 0 0 0.75rem;
   color: #cbd5e1;
@@ -86,4 +89,17 @@ button:active {
   border-radius: 12px;
   border: 1px solid rgba(148, 163, 184, 0.3);
   box-shadow: 0 12px 22px rgba(0, 0, 0, 0.35);
+}
+
+#prompt-log {
+  width: 100%;
+  min-height: 170px;
+  resize: vertical;
+  padding: 0.75rem;
+  border-radius: 12px;
+  border: 1px solid rgba(148, 163, 184, 0.3);
+  background: rgba(2, 6, 23, 0.9);
+  color: #e2e8f0;
+  font-size: 0.95rem;
+  line-height: 1.35;
 }
